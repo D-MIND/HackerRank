@@ -5,7 +5,7 @@ def decodeHuff(root, s):
     for char in s:
         if char == "0":
             temp = temp.left
-        else:
+        elif char == "1":
             temp = temp.right
         if temp.right == None and temp.left == None:
             out.append(temp.data)
